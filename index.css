@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 section {
     margin: 0;
     padding: 0;
@@ -8,11 +11,54 @@ section {
     transform: translatex(-50%);
 }
 
+.page {
+    color: #88001F !important;
+}
+
+.page:hover {
+    color: white !important;
+    background-color: #88001F;
+}
+
 .portada {
     background-image: url("assets/header-02-02.png");
     background-size: cover;
     height: 100vh;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada:hover {
+    background-image: url("assets/HEADER_COLORES-03.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portada h1 {
+    color: white;
+    font-size: 68px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.portada p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+
+.portada p > span {
+    /*color: #BFBFBf;*/
+    color: #88001F;
+    font-weight: bold;
 }
 
 .nosotros {
@@ -21,25 +67,32 @@ section {
     height: 100%;
     justify-content: space-around;
     padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nosotros-text {
     width: 50%;
     height: 50%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nosotros-img {
-    width: 45%;
-    height: 90%;
+    width: 35%;
+    height: 49%;
 }
 
 .nosotros-title {
     text-align: center;
-    color: red;
+    color: #88001F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+
 }
 
 .nosotros-desc {
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .vision {
@@ -47,6 +100,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .vision-img {
     border-radius: 10px;
@@ -55,7 +109,7 @@ section {
     height: 47vh;
     width: 70vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: white;
 
@@ -64,64 +118,82 @@ section {
 .vision-img h4 {
     font-size: 90px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-vision {
     width: 50%;
+    font-family: 'Roboto', sans-serif;
 }
 .text-vision h3 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
 }
 
 
 .content-testimonios {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 5px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .testimonios-title {
     text-align: center;
-    color: red;
+    color: #88001F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+
 }
 
 .content-testimonios h4 {
     font-size: 55px;
-    color: red;
+    color: #88001F;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .content-card {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .card {
     border-radius: 10px;
-    background: red;
+    background: #88001F;
     margin: 10px;
-    width: 480px;
+    width: 350px;
     height: 280px;
     padding: 10px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card h3 {
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contacto {
     height: 50vh;
-    margin-top: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contacto h2 {
-    text-align: center;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #88001F;
 }
 
 .form-content {
@@ -129,7 +201,22 @@ section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.form-content input::placeholder {
+    color: #88001F;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-content textarea::placeholder {
+    color: #88001F;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 
 .footer {
     background-image: url("assets/footer-02.png");
@@ -146,4 +233,77 @@ section {
     color: white;
 }
 
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .nosotros {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .nosotros-img {
+        width: 90%;
+        height: 79%;
+    }
+
+
+    .nosotros-title {
+        text-align: center;
+        color: #88001F;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    .nosotros-desc {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px;
+        height: 20%;
+    }
+
+    .vision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .vision-img {
+        border-radius: 10px;
+        background-image: url("assets/imagen_Vision.png");
+        background-size: cover;
+        height: 47vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+
+    }
+
+    .vision-img h4 {
+        font-size: 50px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .text-vision {
+        width: 70%;
+        font-family: 'Roboto', sans-serif;
+    }
+    .text-vision h3 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 31px;
+    }
+}
 

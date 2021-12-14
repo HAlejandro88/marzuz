@@ -2,26 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/Logo-01.svg" type="image/x-icon">
     <title>Marzuz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/Logo-01.svg" alt="" width="50" height="50">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="nav navbar-nav navbar-center ">
-                        <a class="nav-link" aria-current="page" href="#">Incio</a>
-                        <a class="nav-link" href="#">Quienes Somos</a>
-                        <a class="nav-link" href="#">Misión</a>
-                        <a class="nav-link" href="#">Visión</a>
-                        <a class="nav-link" href="#">Testimonios</a>
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link page" aria-current="page" href="#home">Incio</a>
+                        <a class="nav-link page" href="#nosotros">Quienes Somos</a>
+                        <a class="nav-link page" href="#vision">Visión</a>
+                        <a class="nav-link page" href="#testimonios">Testimonios</a>
+                        <a class="nav-link page" href="#servicios">Servicios</a>
+                        <a class="nav-link page" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -29,87 +37,98 @@
     </section>
 
 
-    <div class="portada"></div>
+    <div class="portada" data-aos="zoom-in" id="home">
 
-    <section class="nosotros">
+        <div>
+            <h1>Grupo Marzuz </h1>
+            <br>
+            <p>
+                Más de <span>20 años de trayectoria</span> y <span>experiencia</span>
+            </p>
+        </div>
+
+    </div>
+
+    <section class="nosotros" data-aos="fade-left" id="nosotros">
         <div class="nosotros-text">
             <h2 class="nosotros-title">Quiénes Somos</h2>
             <br>
             <p class="nosotros-desc">
-                Mas de <span>20 años de trayectoria</span> y <span>experiencia</span>
-                que respaldan tu patrimonio.
-                <br>
-                <br>
-                Somos una empresa de mediación inmobiliaria con más de 20 años en el mercado,
-                ofreciendo inversiones confianza y seguridad a nuestros clientes.
+                Somos un despacho con experiencia en mediación inmobiliaria de recuperación de cartera vencida
+                formado por un grupo de abogados con la más alta capacidad para ofrecer un seguimiento jurídico
+                con la finalidad de que nuestros clientes obtengan el mayor beneficio de los derechos de cobro.
             </p>
         </div>
         <img src="assets/imagen_1-02.png" alt="nosotros" class="nosotros-img">
-    </section>
+    </section >
 
-    <section class="vision">
+    <section class="vision" data-aos="slide-right" id="vision">
         <div class="vision-img">
-            <h4> < </h4>
+            <h4 id="izquierda"> < </h4>
             <div class="text-vision">
-                <h3>Visión</h3>
-                <p>
-                    Empresa líder del mercado en asesoramiento jurídico para
-                    la adquisición de inmuebles de recuperación de cartera, destacando
-                    por el cumplimiento con cada uno de nuestros clientes.
+                <h3 id="titlev">Visión</h3>
+                <p id="descv">
+                    Continuar mejorando el servicio que ofrecemos a nuestros clientes
+                    para seguir destacando como los pioneros en recuperación de cartera.
                 </p>
             </div>
-            <h4> > </h4>
+            <h4 id="derecha"> > </h4>
         </div>
 
     </section>
 
-    <section class="testimonios">
+    <section class="testimonios" data-aos="zoom-in-down" id="testimonios">
         <h2 class="testimonios-title">Testimonios</h2>
         <div class="content-testimonios">
-            <h4> < </h4>
-            <div class="content-card">
-                <div class="card">
-                    <h3>"</h3>
-                    <p>
-                        Me recomendaron con G. Marzuzpara adquirir un inmueble,
-                        mismo que hoy en día es el patrimonio para mi familia, estoy
-                        muy satisfecho de haber colaborado con ellos "
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>"</h3>
-                    <p>
-                        Me recomendaron con G. Marzuzpara adquirir un inmueble,
-                        mismo que hoy en día es el patrimonio para mi familia, estoy
-                        muy satisfecho de haber colaborado con ellos "
-                    </p>
-                </div>
+            <div class="card">
+                <h3>"</h3>
+                <p>
+                    Estoy invirtiendo nuevamente con Grupo Marzuz, ya que cuentan con un gran equipo de trabajo que siempre me apoya y me ayudan a encontrar las mejores opciones para incrementar mi capital.
+                </p>
             </div>
-            <h4> > </h4>
+            <div class="card">
+                <h3>"</h3>
+                <p>
+                    Me recomendaron Grupo Marzuz para adquirir un inmueble, el proceso fue más lento de lo esperado sin embargo la espera valió la pena ya que ahora cuento con un patrimonio para mi familia.
+                </p>
+            </div>
+            <div class="card">
+                <h3>"</h3>
+                <p>
+                    Muchas gracias por sus servicios, en caso de querer adquirir otra propiedad lo haría con ustedes nuevamente.
+                </p>
+            </div>
+            <div class="card">
+                <h3>"</h3>
+                <p>
+                    Le agradezco a Grupo Marzuz porque me brindaron la oportunidad de la mejor inversión de mi vida y he duplicado mi dinero rápidamente, además la calidez y seriedad en su trato es excepcional.
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" data-aos="slide-down" id="contacto">
         <h2>Contacto</h2>
         <div class="form-content">
             <div>
                 <div class="mb-3">
-                    <input type="text" class="form-control"  placeholder="Nombre">
+                    <input type="text" class="form-control"  placeholder="Nombre:">
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control"  placeholder="Email">
+                    <input type="text" class="form-control"  placeholder="Email:">
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control"  placeholder="Telefono">
+                    <input type="text" class="form-control"  placeholder="Telefono:">
                 </div>
 
             </div>
             <div>
                 <div class="mb-3">
-                    <textarea class="form-control" placeholder="Mensaje"  rows="5"></textarea>
+                    <textarea class="form-control" placeholder="Mensaje:"  rows="5"></textarea>
                 </div>
             </div>
         </div>
+        <button class="btn btn-danger btn-lg">Enviar</button>
     </section>
 
 
@@ -119,8 +138,41 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const derecha = document.querySelector('#derecha');
+        const izquierda = document.querySelector('#izquierda');
+        const titleVision = document.querySelector('#titlev');
+        const descriptionVision = document.querySelector('#descv');
+
+        derecha.addEventListener('click', e => {
+           if( titleVision.textContent === 'Visión') {
+               titleVision.textContent = 'Misión';
+               titleVision.classList.add('animate__animated','animate__wobble');
+               descriptionVision.textContent = 'Proporcionar un servicio de mediación y asesoramiento legal en la adquisición de inmuebles de remate para brindarles a nuestros clientes la mayor rentabilidad posible y la oportunidad de invertir en su futuro.'
+           } else {
+               titleVision.textContent = 'Visión';
+               titleVision.classList.add('animate__animated','animate__swing');
+               descriptionVision.textContent = 'Continuar mejorando el servicio que ofrecemos a nuestros clientes para seguir destacando como los pioneros en recuperación de cartera.'
+           }
+        });
+
+        izquierda.addEventListener('click', e => {
+            if( titleVision.textContent === 'Visión') {
+                titleVision.textContent = 'Misión';
+                titleVision.classList.add('animate__animated','animate__wobble');
+                descriptionVision.textContent = 'Proporcionar un servicio de mediación y asesoramiento legal en la adquisición de inmuebles de remate para brindarles a nuestros clientes la mayor rentabilidad posible y la oportunidad de invertir en su futuro.'
+            } else {
+                titleVision.textContent = 'Visión';
+                titleVision.classList.add('animate__animated','animate__jello');
+                descriptionVision.textContent = 'Continuar mejorando el servicio que ofrecemos a nuestros clientes para seguir destacando como los pioneros en recuperación de cartera.'
+            }
+        })
+    </script>
 </body>
 </html>
